@@ -29,7 +29,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5000
 
 # Start the Ollama server in the background and pull the model
-RUN ollama serve & sleep 2 && ollama pull llama3.2
+RUN ollama serve & sleep 2 && ollama pull ollama pull deepseek-r1:7b
 
 # Expose the port for Flask
 EXPOSE 5000
